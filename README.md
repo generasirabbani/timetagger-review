@@ -98,15 +98,15 @@
 Cara pemakaian **TimeTagger** ini cukup mudah, karena aplikasi ini telah menyediakan *interface* yang mudah dimengerti. Berikut adalah langkah-langkah penggunaannya :
 1. Sebelum menggunakan TimeTagger, kita bisa login ke akun user yang sudah diset pada `docker-compose.yml` atau dengan menggunakan default user untuk localhost.
 
-    ![login](../main/screenshots/Login.png)
+    ![login](../main/Screenshots/Login.png)
 
 2. Setelah login, kita akan masuk ke halaman utama. Disini kita dapat memasang tag pada alur waktu untuk penjadwalan.
 
-    ![mainpage](../main/screenshots/Halaman Utama.png)
+    ![mainpage](../main/Screenshots/Halaman Utama.png)
 
 3. Kita bisa menambahkan *Record* baru dengan menekan tombol Record dan Start Record 
 
-    ![startrecord](../main/screenshots/Start Record.png)
+    ![startrecord](../main/Screenshots/Start Record.png)
 - Tampilan aplikasi web
 - Fungsi-fungsi utama
 - Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot

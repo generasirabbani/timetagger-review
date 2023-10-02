@@ -102,11 +102,11 @@ Cara pemakaian **TimeTagger** ini cukup mudah, karena aplikasi ini telah menyedi
 
 2. Setelah login, kita akan masuk ke halaman utama. Disini kita dapat memasang tag pada alur waktu untuk penjadwalan.
 
-    ![mainpage](../main/Screenshots/Halaman Utama.png)
+    ![mainpage](../main/Screenshots/HalamanUtama.png)
 
 3. Kita bisa menambahkan *Record* baru dengan menekan tombol Record dan Start Record 
 
-    ![startrecord](../main/Screenshots/Start Record.png)
+    ![startrecord](../main/Screenshots/StartRecord.png)
 - Tampilan aplikasi web
 - Fungsi-fungsi utama
 - Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot

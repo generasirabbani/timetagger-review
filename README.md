@@ -8,10 +8,10 @@
 
 
 ## Instalasi
-[`^ kembali ke atas ^`](#)
+[`^ kembali ke atas ^`](#aplikasi-web-timetagger)
 
 #### Prasyarat :
-- Unix atau Linux
+- Windows, Unix, atau Linux
 - Python 3.6+
 - Git 2.34+
 - Docker 24.0+
@@ -36,7 +36,7 @@
 
 3. Install library timetagger dengan module pip python.
     ```
-    $ sudo python3 -m pip install -U timetagger
+    $ python3 -m pip install -U timetagger
     ```
 
 4. Clone repository ke dalam direktori yang diinginkan.
@@ -51,12 +51,15 @@
 
 6. Deploy menggunakan docker-compose
     ```
-    $ sudo docker-compose up
+    $ docker-compose up
     ```
 
-## Konfigurasi
+7. Server localhost sudah berjalan dan bisa dilihat di `localhost/timetagger`
 
-- Kita bisa menambahkan akun user dengan mengubah konfigurasi di file `docker-compose.yml` bagian TIMETAGGER_CREDENTIALS
+## Konfigurasi
+[`^ kembali ke atas ^`](#aplikasi-web-timetagger)
+
+- Kita bisa menambahkan akun user dengan mengubah konfigurasi di file `docker-compose.yml` di `timetagger/deploy` bagian TIMETAGGER_CREDENTIALS
     ```
     version: "3"
     services:
@@ -72,29 +75,45 @@
           - TIMETAGGER_LOG_LEVEL=info
           - TIMETAGGER_CREDENTIALS=test:$$2a$$08$$zMsjPEGdXHzsu0N/felcbuWrffsH4.4ocDWY5oijsZ0cbwSiLNA8.  # test:test
     ```
-- Kita perlu membuat string dengan BCrypt hash untuk passwordnya. **TimeTagger** menyediakan layanan hash BCrypt di website https://timetagger.app/cred. 
+- Bisa juga kita jalankan langsung di CLI menggunakan arguments
+    ```
+    $ python3 -m timetagger --credentials=test:$2a$08$0CD1NFiIbancwWsu3se1v.RNR/b7YeZd71yg3cZ/3whGlyU6Iny5i
+    ```
+- Kita perlu membuat string dengan BCrypt hash untuk username dan password yang akan menggantikan username test. **TimeTagger** menyediakan layanan hash BCrypt di website https://timetagger.app/cred. 
 
 ##  Maintenance (opsional)
+[`^ kembali ke atas ^`](#aplikasi-web-timetagger)
 
-Setting tambahan untuk maintenance secara periodik, misalnya:
-- buat backup database tiap pekan
-- hapus direktori sampah tiap hari
-- dll
-
+- -
 
 ## Otomatisasi (opsional)
+[`^ kembali ke atas ^`](#aplikasi-web-timetagger)
 
-Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
+- -
 
 
 ## Cara Pemakaian
+[`^ kembali ke atas ^`](#aplikasi-web-timetagger)
 
+Cara pemakaian **TimeTagger** ini cukup mudah, karena aplikasi ini telah menyediakan *interface* yang mudah dimengerti. Berikut adalah langkah-langkah penggunaannya :
+1. Sebelum menggunakan TimeTagger, kita bisa login ke akun user yang sudah diset pada `docker-compose.yml` atau dengan menggunakan default user untuk localhost.
+
+    ![login](../main/screenshots/Login.png)
+
+2. Setelah login, kita akan masuk ke halaman utama. Disini kita dapat memasang tag pada alur waktu untuk penjadwalan.
+
+    ![mainpage](../main/screenshots/Halaman Utama.png)
+
+3. Kita bisa menambahkan *Record* baru dengan menekan tombol Record dan Start Record 
+
+    ![startrecord](../main/screenshots/Start Record.png)
 - Tampilan aplikasi web
 - Fungsi-fungsi utama
 - Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
 
 
 ## Pembahasan
+[`^ kembali ke atas ^`](#aplikasi-web-timetagger)
 
 - Pendapat anda tentang aplikasi web ini
     - kelebihan
@@ -103,5 +122,6 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 
 
 ## Referensi
+[`^ kembali ke atas ^`](#aplikasi-web-timetagger)
 
 Cantumkan tiap sumber informasi yang anda pakai.

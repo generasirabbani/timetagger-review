@@ -1,8 +1,8 @@
 # Aplikasi Web TimeTagger
 <h1 align="center"><img src="https://timetagger.app/timetagger_wl.svg"></h1>
 
-[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Otomatisasi](#otomatisasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
-:---:|:---:|:---:|:---:|:---:|:---:|:---:
+[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
+:---:|:---:|:---:|:---:|:---:|:---:
 ## Sekilas Tentang
 [`^ kembali ke atas ^`](#)
 
@@ -81,12 +81,6 @@
     $ python3 -m timetagger --credentials=test:$2a$08$0CD1NFiIbancwWsu3se1v.RNR/b7YeZd71yg3cZ/3whGlyU6Iny5i
     ```
 - Kita perlu membuat string dengan BCrypt hash untuk username dan password yang akan menggantikan username test. **TimeTagger** menyediakan layanan hash BCrypt di website https://timetagger.app/cred. 
-
-##  Maintenance (opsional)
-[`^ kembali ke atas ^`](#aplikasi-web-timetagger)
-
-## Otomatisasi (opsional)
-[`^ kembali ke atas ^`](#aplikasi-web-timetagger)
 
 ## Cara Pemakaian
 [`^ kembali ke atas ^`](#aplikasi-web-timetagger)

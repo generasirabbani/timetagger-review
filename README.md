@@ -100,7 +100,7 @@ Cara pemakaian **TimeTagger** ini cukup mudah, karena aplikasi ini telah menyedi
 
 4. Pada bagian *Timeline* di kiri, kita bisa klik kemudian klik dan drag selama waktu yang diinginkan. Setelah itu akan muncul New Record untuk menandakan sesuatu yang sudah selesai dilaksanakan. Kita bisa menambahkan deskripsi kegiatan, tag, dan waktu. Setelah selesai, klik tombol Create.
 
-    ![newrecord](../main/Screenshots/NewRecord.png)
+    ![newrecord](../main/Screenshots/AddRecord.png)
 
 5. Setelah menambahkan record, kita bisa mengedit record yang sudah ada dengan mengklik record tersebut dan muncul Edit Record. Kemudian bisa diubah deskripsi, tag dan waktunya. Setelah selesai, klik tombol Save.
 
